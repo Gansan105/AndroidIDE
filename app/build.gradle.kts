@@ -27,7 +27,7 @@ android {
   }
   
   signingConfigs {
-        create("debug") {
+        create("release") {
             storeFile = file("testkey_untrusted.jks")
             storePassword = "xrj45yWGLbsO7W0v"
             keyAlias = "alias"
@@ -38,7 +38,7 @@ android {
   buildTypes {
     release {
       isShrinkResources = true
-      signingConfig = signingConfigs.getByName("debug")
+      signingConfig = signingConfigs.getByName("release")
     }
   }
 

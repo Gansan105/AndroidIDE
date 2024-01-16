@@ -27,7 +27,7 @@ android {
   }
   
   signingConfigs {
-        getByName("debug") {
+        create("debug") {
             storeFile = file("testkey_untrusted.jks")
             storePassword = "xrj45yWGLbsO7W0v"
             keyAlias = "alias"

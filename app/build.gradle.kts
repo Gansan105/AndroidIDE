@@ -27,13 +27,14 @@ android {
   }
 
   signingConfigs {
-        release {
+         release {
             storeFile file('testkey_untrusted.jks')
             keyAlias 'alias'
             storePassword 'xrj45yWGLbsO7W0v'
             keyPassword 'xrj45yWGLbsO7W0v'
-        }
-    }
+         }
+  }
+
 
   buildTypes {
     release {
